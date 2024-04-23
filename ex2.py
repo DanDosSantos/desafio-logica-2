@@ -18,7 +18,10 @@ def ranking(vitorias, derrotas):
     else:
         return 'Imortal'
     
-
-saldo_vitorias = 20 - 5
-nivel = ranking(20, 5)
-print(f'O heroi tem o saldo de {saldo_vitorias} e está no nível {nivel}')
+while True:
+    vitorias = int(input("Digite a quantidade de vitórias: "))
+    derrotas = int(input("Digite a quantidade de derrotas: "))
+    saldo_vitorias = vitorias - derrotas
+    nivel = ranking(vitorias, derrotas)
+    print(f'O heroi tem o saldo de {saldo_vitorias} e está no nível {nivel}')
+    break
